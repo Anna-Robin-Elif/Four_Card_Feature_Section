@@ -167,6 +167,31 @@ main{
     line-height: 1.6;
 }
 
+@media (min-width: 750px) and (max-width: 760px){
+    .section__intro .container__h1{
+    font-size: 2rem;
+    text-decoration: none;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%; 
+    }
+
+    @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+}
+}
+
+
+
 @media (min-width: 1440px) {
   .section__cards {
     display: grid;
